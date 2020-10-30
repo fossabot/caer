@@ -5,7 +5,7 @@ import sys
 import platform
 
 # v1.7.6 cannot be used (previously deleted)
-VERSION = '1.7.8'
+VERSION = '0.0.1'
 
 # Checking if right Python version is used
 

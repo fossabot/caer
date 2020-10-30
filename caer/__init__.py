@@ -20,81 +20,42 @@ version = v
 release = r
 contributors = c
 
+from .preprocess import * 
+from .utilities import * 
+from .opencv import * 
+from .visualizations import * 
+from .time import * 
+from .images import * 
+from .configs import * 
 
-from .preprocess import preprocess_from_dir
-from .preprocess import sep_train
-from .preprocess import shuffle
-from .preprocess import reshape
-from .preprocess import normalize
-
-from .utilities import saveNumpy
-from .utilities import train_val_split
-from .utilities import get_classes_from_dir
-from .utilities import sort_dict
-from .utilities import plotAcc
-
-from .opencv import get_opencv_version
-from .opencv import to_gray
-from .opencv import to_hsv
-from .opencv import to_lab
-from .opencv import to_rgb
-from .opencv import url_to_image 
-from .opencv import translate
-from .opencv import rotate 
-from .opencv import edges 
-
-from .visualizations import hex_to_rgb
-from .visualizations import draw_rectangle
-
-from .time import now
-
-from .images import resize 
-from .images import center_crop 
-from .images import load_img 
-
-# Bringing in configuration variables from configs.py
-from .configs import CROP_CENTRE
-from .configs import CROP_TOP
-from .configs import CROP_LEFT
-from .configs import CROP_RIGHT 
-from .configs import CROP_BOTTOM
-from .configs import VALID_URL_NO_EXIST
-from .configs import INVALID_URL_STRING
+from .data import *
+from .preprocessing import *
+from .utils import *
+from .video import *
 
 
-def get_caer_version():
-    return __version__
+
+# # __all__ configs
+# from .configs import __all__ as __all_configs__
+# from .images import __all__ as __all_images__
+# from .opencv import __all__ as __all_opencv__
+# from .preprocess import __all__ as __all_preprocess__
+# from .time import __all__ as __all_time__
+# from .utilities import __all__ as __all_utilities__
+# from .visualizations import __all__ as __all_visualizations__
+
+# # from .io import __all__ as __all_io__
+# from .video import __all__ as __all_video__
+# from .preprocessing import __all__ as __all_preprocessing__
+# from .data import __all__ as __all_data__
+# from .utils import __all__ as __all_utils__
+# from .path import __all__ as __all_path__
 
 
-def get_caer_functions():
-    return __all__
+# __all__ = __all_configs__ + __all_images__ + __all_opencv__ + __all_preprocess__ + __all_time__ + __all_utilities__ + __all_visualizations__
 
-
-def get_caer_methods():
-    return __all__
-
-
-# __all__ configs
-from .configs import __all__ as __all_configs__
-from .images import __all__ as __all_images__
-from .opencv import __all__ as __all_opencv__
-from .preprocess import __all__ as __all_preprocess__
-from .time import __all__ as __all_time__
-from .utilities import __all__ as __all_utilities__
-from .visualizations import __all__ as __all_visualizations__
-
-# from .io import __all__ as __all_io__
-from .video import __all__ as __all_video__
-from .preprocessing import __all__ as __all_preprocessing__
-from .data import __all__ as __all_data__
-from .utils import __all__ as __all_utils__
-from .path import __all__ as __all_path__
-
-
-__all__ = __all_configs__ + __all_images__ + __all_opencv__ + __all_preprocess__ + __all_time__ + __all_utilities__ + __all_visualizations__
-
-__all__ += __all_preprocessing__ 
-__all__ += __all_video__ 
-__all__ += __all_data__ 
-__all__ += __all_utils__ 
-__all__ += __all_path__
+# __all__ += __all_preprocessing__ 
+# __all__ += __all_video__ 
+# __all__ += __all_data__ 
+# __all__ += __all_utils__ 
+# __all__ += __all_path__
