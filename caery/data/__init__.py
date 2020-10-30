@@ -45,6 +45,10 @@ def drone(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
     return load_img(here+'drone.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
 
 
+def dusk(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
+    return load_img(here+'dusk.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
+
+
 def fighter_fish(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
     return load_img(here+'fighter_fish.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
 
@@ -81,6 +85,10 @@ def mountain(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
     return load_img(here+'mountain.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
 
 
+def night(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
+    return load_img(here+'night.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
+
+
 def puppies(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
     return load_img(here+'puppies.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
 
@@ -103,6 +111,7 @@ def sea_turtle(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
 
 def snow(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
     return load_img(here+'snow.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
+
 
 def snowflake(target_size=None, resize_factor=None,  keep_aspect_ratio=False):
     return load_img(here+'snowflake.jpg', target_size=target_size, resize_factor=resize_factor,  keep_aspect_ratio=keep_aspect_ratio)
@@ -143,7 +152,7 @@ __all__ = (
     'phone',
     'sea_turtle',
     'snow',
-    'snow_turtle',
+    'sea_turtle',
     'sunrise',
     'tent'
 )
